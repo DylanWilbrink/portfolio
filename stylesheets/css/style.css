@@ -1,0 +1,144 @@
+/*Font locatie weizigen naar de gewenste locatie waar de fonts staan.*/
+
+@font-face {
+    font-family: "the_mix_bold";
+    src: url(../../font/themix/themix_bold.eot);
+    src: url(../../font/themix/themix_bold.eot?#iefix) format("embedded-opentype"), url(../../font/themix/themix_bold.woff2) format("woff2"), url(../../font/themix/themix_bold.woff) format("woff"), url(../../font/themix/themix_bold.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar{
+    border-bottom: 4px solid #45c0ce;
+    box-shadow: 0 0 0;
+    font-family: Arial;
+    margin-bottom: 0px!important;
+}
+.nav-link{
+    font-family: the_mix_bold;
+    background: #7464ac;
+    margin-left:12px;
+    padding: 0 16px!important;
+    line-height: 40px;
+    color: white!important;
+    /*box-shadow: 4px 4px 0px 0px rgba(50,50,50,0.5);*/
+}
+
+@media (max-width: 992px) {
+    .nav-link{
+        margin-top: 12px;
+        margin-left: 0px;
+    }
+    nav{
+        padding: 0px;
+    }
+    .nav-brand-img{
+        width: 160px!important;
+    }
+}
+.nav-brand-img{
+    width: 240px;
+}
+
+.nav-link, .nav-link:hover, .nav-link:active, .nav-link:focus {
+    outline: 0;
+}
+
+
+.custom-toggler{
+    background: #7464ac;
+    padding: 12px;
+    border-radius: 0px;
+    /*box-shadow: 4px 4px 0px 0px rgba(50,50,50,0.5);*/
+}
+
+
+.quote-container{
+    position: relative;
+    /*padding-right: 0px!important;*/
+}
+.quote {
+    position: relative;
+    width: 50%;
+    float: right;
+    box-shadow: 0 0 0 6px #404040;
+    margin: 6px;
+    background-color: #ffffff;
+    font-family: the_mix_bold;
+}
+
+.quote:before{
+    content: '';
+    background-image: url(https://www.aventus.nl/sites/all/themes/aventus/static/images/quote-arrow-purple.svg);
+    width: 50px;
+    margin-left: 0;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 40px;
+    position: absolute;
+    z-index: 3;
+    transform: rotate(-90deg);
+    margin-left: -36px;
+}
+.jumbocard{
+    border-radius:0px;
+    background-size: cover;
+    background-position: 50% 15%;
+    box-shadow: 0 0 0 ;
+}
+
+@media (max-width: 576px) {
+    .quote{
+        margin:
+    }
+}
+@media (max-width: 992px) {
+    .jumbocard{
+        margin-bottom: 200px;
+        padding-top: 100px;
+    }
+    .quote{
+        width: 100%;
+        position: absolute;
+        left:-6px;
+        float: left;
+
+    }
+
+    .quote:before{
+        transform: rotate(0deg);
+        margin-left: 12px;
+        margin-top: -30px;
+
+    }
+}
+
+.link-button{
+    margin: 0 24px 24px 24px;
+    padding: 0 16px;
+    line-height: 40px;
+    background: #d2232a;
+    color: white;
+    display:inline-block;
+    font-size: 19px;
+    float: right;
+}
+
+.link-button a, a.disabled:hover, a:disabled:hover {
+    color: white!important;
+    outline: 0;
+}
+
+.text{
+    padding: 24px;
+    background: #7464ac;
+    font-size: 28px;
+    color: white;
+}
+
+.text-bottom{
+    padding: 24px;
+    background: white;
+    font-size: 19px;
+}
