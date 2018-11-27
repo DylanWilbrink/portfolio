@@ -56,8 +56,28 @@ include('includes/navbar_index.php');
                 <div class="av-card">
                     <img class="av-img" src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=Afbeelding van project">
                     <div class="av-text">
-                        <h2 class="av-card-kop">Titel van het project</h2>
-                        <p class="av-card-text">omschrijving van project.</p>
+                        <h2 class="av-card-kop">Titel van het project1</h2>
+                        <p class="av-card-text">omschrijving van project1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="av-card">
+                    <img class="av-img" src="http://placehold.jp/3EB1C8/ffffff/1920x1080.png?text=Afbeelding van project">
+                    <div class="av-text">
+                        <h2 class="av-card-kop">Titel van het project2</h2>
+                        <p class="av-card-text">omschrijving van project2.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="av-card">
+                    <img class="av-img" src="http://placehold.jp/EA7600/ffffff/1920x1080.png?text=Afbeelding van project">
+                    <div class="av-text">
+                        <h2 class="av-card-kop">Titel van het project3</h2>
+                        <p class="av-card-text">omschrijving van project3.</p>
                     </div>
                 </div>
             </div>
