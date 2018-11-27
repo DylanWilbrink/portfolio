@@ -28,7 +28,7 @@ if (isset($shows)) {
         <div style="float:left; width:200px;height:100px;border:solid;">
             <?php
             echo $result['project_name'] . '<br>';
-            echo $result['project_image'];
+            echo $result['project_imagename'];
             ?>
         </div>
         <?php
@@ -39,7 +39,7 @@ if (isset($shows)) {
         <div style="float:left; width:200px;height:100px;border:solid;">
             <?php
             echo $result['project_name'] . '<br>';
-            echo $result['project_image'];
+            echo $result['project_imagename'];
             ?>
         </div>
         <?php
