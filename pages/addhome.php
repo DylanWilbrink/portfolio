@@ -50,65 +50,6 @@ include('../includes/navbar.php');
     </div>
 </div>
 
-<div class="container my-4">
-    <div class="swiper-container sliderprojecten">
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-                <div class="av-card" style="height: 350px; margin: 2px; box-shadow: 0 0 0 2px #404040;">
-                    <img src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=Afbeelding van project" alt="" style="width: 100%; height: 50%; object-fit: cover;">
-                    <div class="av-text" style="padding: 24px">
-                        <h2 style="line-height: 24px; font-size: 22px; font-family: the_mix_bold; color: #404040">Titel van het project</h2>
-                        <p>omschrijving van project.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="av-card" style="height: 350px; margin: 2px; box-shadow: 0 0 0 2px #404040;">
-                    <img src="http://placehold.jp/3EB1C8/ffffff/1920x1080.png?text=Afbeelding van project" alt="" style="width: 100%; height: 50%; object-fit: cover;">
-                    <div class="av-text" style="padding: 24px">
-                        <h2 style="line-height: 24px; font-size: 22px; font-family: the_mix_bold; color: #404040">Titel van het project</h2>
-                        <p>omschrijving van project.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="av-card" style="height: 350px; margin: 2px; box-shadow: 0 0 0 2px #404040;">
-                    <img src="http://placehold.jp/ea7600/ffffff/1920x1080.png?text=Afbeelding van project" alt="" style="width: 100%; height: 50%; object-fit: cover;">
-                    <div class="av-text" style="padding: 24px">
-                        <h2 style="line-height: 24px; font-size: 22px; font-family: the_mix_bold; color: #404040">Titel van het project</h2>
-                        <p>omschrijving van project.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
-    <script>
-        var swiper = new Swiper('.sliderprojecten', {
-            speed: 1000,
-            slidesPerView: 3,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            spaceBetween: 24,
-            loop: true,
-            // effect: 'fade',
-            coverflowEffect: {
-                rotate: 50,
-                slideShadows: false,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 2
-                }
-            },
-        });
-    </script>
-</div>
-
 
 <!-- SCRIPTS -->
 <!-- JQuery -->

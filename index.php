@@ -33,7 +33,7 @@ include('includes/navbar_index.php');
     <div class="container quote-container py-5 my-5">
         <div class="quote">
             <div class="text">
-                Quote van de persoon.
+                Quote van de persoon
             </div>
             <div class="text-bottom">
                 Naam/functie of iets dergelijks
@@ -44,41 +44,25 @@ include('includes/navbar_index.php');
         </div>
     </div>
 </div>
-
+<div class="container mt-4">
+    <h2 class="intro-kop">Titeltext voor de homepage</h2>
+    <p class="intro-text"> Inleidende text voor de homepage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare, mauris ut convallis euismod, magna orci sodales neque, consequat malesuada ante eros quis lectus. Phasellus dictum tempor vehicula. Vestibulum vitae diam nibh. Morbi scelerisque elit eu libero condimentum, vitae auctor nunc congue. Praesent justo ex, feugiat in ante at, sodales laoreet turpis. Etiam feugiat, turpis ac mattis commodo, neque risus consectetur ante, eget condimentum mi nibh sit amet nisl.</p>
+</div>
 <div class="container my-4">
     <div class="swiper-container sliderprojecten">
         <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-                <div class="av-card" style="height: 350px; margin: 2px; box-shadow: 0 0 0 2px #404040;">
-                    <img src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=Afbeelding van project" alt="" style="width: 100%; height: 50%; object-fit: cover;">
-                    <div class="av-text" style="padding: 24px">
-                        <h2 style="line-height: 24px; font-size: 22px; font-family: the_mix_bold; color: #404040">Titel van het project</h2>
-                        <p>omschrijving van project.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="av-card" style="height: 350px; margin: 2px; box-shadow: 0 0 0 2px #404040;">
-                    <img src="http://placehold.jp/3EB1C8/ffffff/1920x1080.png?text=Afbeelding van project" alt="" style="width: 100%; height: 50%; object-fit: cover;">
-                    <div class="av-text" style="padding: 24px">
-                        <h2 style="line-height: 24px; font-size: 22px; font-family: the_mix_bold; color: #404040">Titel van het project</h2>
-                        <p>omschrijving van project.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="av-card" style="height: 350px; margin: 2px; box-shadow: 0 0 0 2px #404040;">
-                    <img src="http://placehold.jp/ea7600/ffffff/1920x1080.png?text=Afbeelding van project" alt="" style="width: 100%; height: 50%; object-fit: cover;">
-                    <div class="av-text" style="padding: 24px">
-                        <h2 style="line-height: 24px; font-size: 22px; font-family: the_mix_bold; color: #404040">Titel van het project</h2>
-                        <p>omschrijving van project.</p>
+                <div class="av-card">
+                    <img class="av-img" src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=Afbeelding van project">
+                    <div class="av-text">
+                        <h2 class="av-card-kop">Titel van het project</h2>
+                        <p class="av-card-text">omschrijving van project.</p>
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="swiper-pagination"></div>
     </div>
     <script>
         var swiper = new Swiper('.sliderprojecten', {

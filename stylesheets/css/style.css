@@ -142,3 +142,48 @@
     background: white;
     font-size: 19px;
 }
+
+
+.intro-text{
+    background: #F1F1F2;
+    padding:24px;
+    padding-top:0px;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+.intro-kop{
+    background: #F1F1F2;
+    padding:24px;
+    line-height: 24px;
+    font-size: 22px;
+    margin-bottom: 0;
+    font-family: the_mix_bold;
+    color: #404040;
+}
+.av-card{
+    height: 350px; margin: 2px; box-shadow: 0 0 0 2px #404040;
+}
+
+.av-text{
+    padding: 24px;
+}
+
+.av-img{
+    width: 100%; height: 50%; object-fit: cover;
+}
+.av-card-kop{
+    line-height: 24px;
+    font-size: 22px;
+    font-family: the_mix_bold;
+    color: #404040;
+    padding-bottom: 12px;
+    margin-bottom: 0px;
+}
+
+.av-card-text{
+    margin-top: 0px;
+    padding-top:0px;
+    line-height: 18px;
+    font-size: 16px;
+}
