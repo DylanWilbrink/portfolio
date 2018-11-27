@@ -100,14 +100,7 @@ include('../includes/navbar.php');
                 rotate: 50,
                 slideShadows: false,
             },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
             breakpoints: {
-                992: {
-                    slidesPerView: 1
-                }
                 768: {
                     slidesPerView: 2
                 }
