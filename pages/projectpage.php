@@ -25,7 +25,8 @@
 
 
     <?php
-    include('../php/addhome.php');
+    include("../includes/connection.php");
+    $connect = new connection();
     ?>
 </head>
 
@@ -33,22 +34,24 @@
 <!-- Start your project here-->
 <?php
 include('../includes/navbar.php');
+
+// get controle
+if (isset($_GET['project_id']) && !empty($_GET['project_id'])){
+// print project uit
+    $sql = $connect->connect()->prepare("SELECT * FROM projects WHERE project_id=?");
+    $sql->BindParam(1, $_GET['project_id']);
+    $sql->execute();
+    $result = $sql->fetchAll();
+
+    foreach ($result as $row) {
+        echo $row['project_name'].
+            $row['project_description'].
+            "<img class=\"card-img\" src=\"../data/img/" . $row['project_imagename'] . "\" alt=\"foto van het projcet/\">";
+    }
+} else {
+    header("Location: ../index.php");
+}
 ?>
-<div class="card jumbocard card-image" style="background-image: url(../Header.jpg);">
-    <div class="container quote-container py-5 my-5">
-        <div class="quote">
-            <div class="text">
-                Quote van de persoon.
-            </div>
-            <div class="text-bottom">
-                Naam/functie of iets dergelijks
-            </div>
-            <div class="link-button">
-                <a class="link" href="#link">Meer over onderwerp</a>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <!-- SCRIPTS -->
