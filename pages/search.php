@@ -1,86 +1,49 @@
-<?php
-session_start();
-include("../includes/connection.php");
-$connect = new connection();
-?>
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-</head>
-<body>
+    <?php include('../php/homes.php');
 
-<header >
-
-        <a href="search.php?volgorde=name">name A-Z</a>
-        <a href="search.php?volgorde=name_desc">name Z-A</a>
-        <a href="search.php?volgorde=price">price laag - hoog</a>
-        <a href="search.php?volgorde=price_desc">price hoog - laag</a>
-        <a href="search.php?volgorde=date">oud - nieuw</a>
-        <a href="search.php?volgorde=date_desc">nieuw - oud</a>
-    </div>
-</header>
-
-
-<!-- Body -->
-<div class="item-wrapper">
-    <?php
-
-    if (isset($_GET['volgorde'])) {
-
-        switch ($_GET['volgorde']) {
-
-            case "name":
-                $volgorde = "house_name";
-                break;
-
-            case "name_desc":
-                $volgorde = "house_name DESC";
-                break;
-
-            case "price":
-                $volgorde = "price";
-                break;
-
-            case "price_desc":
-                $volgorde = "price DESC";
-                break;
-
-            case "date":
-                $volgorde = "date_created";
-                break;
-
-            case "date_desc":
-                $volgorde = "date_created DESC";
-                break;
-
-            default:
-                $volgorde = "house_name";
-                break;
-
-        }
-
-    } else {
-
-        $volgorde = "house_name";
-    }
-
-    $sql = $connect->connect()->prepare("SELECT * FROM homes ORDER BY " . $volgorde);
-    $sql->BindParam(1, $volgorde);
-    $sql->execute();
-    $result = $sql->fetchAll();
-
-    foreach ($result as $row) {
-
-        echo "<a href='views/homes.php?house=" . $row['house_id'] . "'><div class='vinyl-item'><h4>"
-            . strip_tags($row['house_name'], '')
-            . " - $"
-            . strip_tags($row["price"], '')
-            . "</h4><img style='width: 100%;' src='data/img/"
-            . $row['house_photos']
-            . "'> </div> </a>";
+    if($_POST['submit']) {
+        $show = $connection->connect()->prepare("SELECT * FROM projects p
+                                                  WHERE p.project_name LIKE :search OR p.project_creators LIKE :search
+                                                  ORDER BY p.project_id DESC");
+        $show->execute(array(
+            ':search' => '%' . $search . '%'
+        ));
+        $shows = $show->fetchAll();
+        $show_count = $show->rowCount();
     }
     ?>
-</div>
+</head>
+<body>
+<form action="search.php" method="post">
+    <input type="text" name="search">
+    <input type="submit" name="submit">
+</form>
 
+<?php
+
+if (isset($shows)) {
+    foreach ($shows as $result) {
+        ?>
+        <div style="float:left; width:200px;height:100px;border:solid;">
+            <?php
+            echo $result['project_name'] . '<br>';
+            echo $result['project_imagename'];
+            ?>
+        </div>
+        <?php
+    }
+} else {
+    foreach ($results as $result) {
+        ?>
+        <div style="float:left; width:200px;height:100px;border:solid;">
+            <?php
+            echo $result['project_name'] . '<br>';
+            echo $result['project_imagename'];
+            ?>
+        </div>
+        <?php
+    }
+} ?>
 </body>
 </html>
