@@ -16,18 +16,26 @@
     <link href="stylesheets/css/style.css" rel="stylesheet">
 
 
-
     <!--css-->
     <link rel="stylesheet" href="js/swiper/css/swiper.css">
     <!--js-->
     <script src="js/swiper/js/swiper.js"></script>
     <script src="js/swiper/js/swiper.esm.js"></script>
+
 </head>
 
 <body>
 <!-- Start your project here-->
 <?php
 include('includes/navbar_index.php');
+include('includes/connection.php');
+$connection = new connection();
+
+$query = $connection->connect()->prepare('SELECT * FROM projects
+                                          ORDER BY project_id DESC
+                                          LIMIT 12');
+$query->execute();
+$results = $query->fetchAll();
 ?>
 <div class="card jumbocard card-image" style="background-image: url(Headerbeter.jpg);">
     <div class="container quote-container py-5 my-5">
@@ -46,42 +54,28 @@ include('includes/navbar_index.php');
 </div>
 <div class="container mt-4">
     <h2 class="intro-kop">Titeltext voor de homepage</h2>
-    <p class="intro-text"> Inleidende text voor de homepage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare, mauris ut convallis euismod, magna orci sodales neque, consequat malesuada ante eros quis lectus. Phasellus dictum tempor vehicula. Vestibulum vitae diam nibh. Morbi scelerisque elit eu libero condimentum, vitae auctor nunc congue. Praesent justo ex, feugiat in ante at, sodales laoreet turpis. Etiam feugiat, turpis ac mattis commodo, neque risus consectetur ante, eget condimentum mi nibh sit amet nisl.</p>
+    <p class="intro-text"> Inleidende text voor de homepage. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Suspendisse ornare, mauris ut convallis euismod, magna orci sodales neque, consequat malesuada ante eros quis
+        lectus. Phasellus dictum tempor vehicula. Vestibulum vitae diam nibh. Morbi scelerisque elit eu libero
+        condimentum, vitae auctor nunc congue. Praesent justo ex, feugiat in ante at, sodales laoreet turpis. Etiam
+        feugiat, turpis ac mattis commodo, neque risus consectetur ante, eget condimentum mi nibh sit amet nisl.</p>
 </div>
 <div class="container my-4">
     <div class="swiper-container sliderprojecten">
         <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-                <div class="av-card">
-                    <img class="av-img" src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=Afbeelding van project">
-                    <div class="av-text">
-                        <h2 class="av-card-kop">Titel van het project1</h2>
-                        <p class="av-card-text">omschrijving van project1.</p>
+            <?php foreach ($results as $result) { ?>
+                <div class="swiper-slide">
+                    <div class="av-card">
+                        <img class="av-img"
+                             src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=Afbeelding van project">
+                        <div class="av-text">
+                            <h2 class="av-card-kop"><?php echo $result['project_name']; ?></h2>
+                            <p class="av-card-text"><?php echo $result['project_description']; ?></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="av-card">
-                    <img class="av-img" src="http://placehold.jp/3EB1C8/ffffff/1920x1080.png?text=Afbeelding van project">
-                    <div class="av-text">
-                        <h2 class="av-card-kop">Titel van het project2</h2>
-                        <p class="av-card-text">omschrijving van project2.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="av-card">
-                    <img class="av-img" src="http://placehold.jp/EA7600/ffffff/1920x1080.png?text=Afbeelding van project">
-                    <div class="av-text">
-                        <h2 class="av-card-kop">Titel van het project3</h2>
-                        <p class="av-card-text">omschrijving van project3.</p>
-                    </div>
-                </div>
-            </div>
-
+            <?php } ?>
         </div>
     </div>
     <script>
