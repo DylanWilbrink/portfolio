@@ -141,6 +141,7 @@
     padding: 24px;
     background: white;
     font-size: 19px;
+    color: #3C3C3C;
 }
 
 
@@ -150,6 +151,7 @@
     padding-top:0px;
     line-height: 18px;
     font-size: 16px;
+    color: #3C3C3C;
 }
 
 .intro-kop{
@@ -159,7 +161,7 @@
     font-size: 22px;
     margin-bottom: 0;
     font-family: the_mix_bold;
-    color: #404040;
+    color: #3C3C3C;
 }
 .av-card{
     height: 350px; margin: 2px; box-shadow: 0 0 0 2px #F1F1F2;
@@ -176,12 +178,13 @@
     line-height: 24px;
     font-size: 22px;
     font-family: the_mix_bold;
-    color: #404040;
+    color: #3C3C3C;
     padding-bottom: 12px;
     margin-bottom: 0px;
 }
 
 .av-card-text{
+    color: #3C3C3C;
     margin-top: 0px;
     padding-top:0px;
     line-height: 18px;
