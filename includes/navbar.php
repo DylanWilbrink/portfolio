@@ -9,7 +9,7 @@
         <div class="navbar-collapse collapse" id="navbarSupportedContent-5">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light" href="#">Contact</a>
+                    <a class="nav-link waves-effect waves-light" href="../pages/search.php">Projecten</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link waves-effect waves-light" href="#">Contact</a>
