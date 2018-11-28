@@ -47,7 +47,7 @@ $results = $query->fetchAll();
                 Naam/functie of iets dergelijks
             </div>
             <div class="link-button">
-                <a class="link" href="#link">Meer over onderwerp</a>
+                <a class="link" href="pages/search.php">Meer over onderwerp</a>
             </div>
         </div>
     </div>
@@ -68,7 +68,7 @@ $results = $query->fetchAll();
                 <div class="swiper-slide">
                     <div class="av-card">
                         <img class="av-img"
-                             src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=Afbeelding van project">
+                             src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>">
                         <div class="av-text">
                             <h2 class="av-card-kop"><?php echo $result['project_name']; ?></h2>
                             <p class="av-card-text"><?php echo $result['project_description']; ?></p>
