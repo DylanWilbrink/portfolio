@@ -29,7 +29,7 @@
 <?php
 include('includes/navbar_index.php');
 ?>
-<div class="card jumbocard card-image" style="background-image: url(Header.jpg);">
+<div class="card jumbocard card-image" style="background-image: url(Headerbeter.jpg);">
     <div class="container quote-container py-5 my-5">
         <div class="quote">
             <div class="text">
