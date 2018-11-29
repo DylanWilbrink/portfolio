@@ -27,12 +27,6 @@
     <!-- Your custom styles (optional) -->
     <link href="../stylesheets/css/style.css" rel="stylesheet">
 
-
-    <!--css-->
-    <link rel="stylesheet" href="js/swiper/css/swiper.css">
-    <!--js-->
-    <script src="js/swiper/js/swiper.js"></script>
-    <script src="js/swiper/js/swiper.esm.js"></script>
 </head>
 <body>
 <?php
@@ -94,5 +88,15 @@ include('../includes/navbar.php');
         } ?>
     </div>
 </div>
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
 </html>
