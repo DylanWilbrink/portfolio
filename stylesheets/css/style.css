@@ -155,6 +155,15 @@
     margin-bottom: 0px;
 }
 
+.error-text{
+    background: #DA291C;
+    padding:24px;
+    line-height: 18px;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 0px;
+}
+
 .intro-kop{
     background: #F1F1F2;
     padding:24px;

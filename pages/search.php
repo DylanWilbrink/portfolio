@@ -66,7 +66,11 @@ include('../includes/navbar.php');
                     <?php
                 }
             } else {
-                echo 'Geen resultaten gevonden';
+                ?>
+                <div class="col-md-12 mt-4">
+                    <p class="error-text">Er zijn geen resultaten gevonden.</p>
+                </div>
+                <?php
             }
         } else {
             foreach ($results as $result) {
