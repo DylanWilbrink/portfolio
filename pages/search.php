@@ -58,7 +58,7 @@ include('../includes/navbar.php');
                             <img class="av-img"
                                  src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>">
                             <div class="av-text">
-                                <h2 class="av-card-kop"><?php echo $result['project_name']; ?></h2>
+                                <a href="projectpage.php?project_id=<?php echo $result['project_id']; ?>"><?php echo $result['project_name']; ?></a>
                                 <p class="av-card-text"><?php echo $result['project_description']; ?></p>
                             </div>
                         </div>
@@ -80,7 +80,7 @@ include('../includes/navbar.php');
                         <img class="av-img"
                              src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>">
                         <div class="av-text">
-                            <h2 class="av-card-kop"><?php echo $result['project_name']; ?></h2>
+                            <a href="projectpage.php?project_id=<?php echo $result['project_id']; ?>"><?php echo $result['project_name']; ?></a>
                             <p class="av-card-text"><?php echo $result['project_description']; ?></p>
                         </div>
                     </div>
