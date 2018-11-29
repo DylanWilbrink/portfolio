@@ -54,14 +54,16 @@ include('../includes/navbar.php');
                 foreach ($shows as $result) {
                     ?>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12" style="padding-top: 24px">
-                        <div class="av-card">
-                            <img class="av-img"
-                                 src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>">
-                            <div class="av-text">
-                                <a href="projectpage.php?project_id=<?php echo $result['project_id']; ?>"><?php echo $result['project_name']; ?></a>
-                                <p class="av-card-text"><?php echo $result['project_description']; ?></p>
+                        <a href="projectpage.php?project_id=<?php echo $result['project_id']; ?>">
+                            <div class="av-card">
+                                <img class="av-img"
+                                     src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>">
+                                <div class="av-text">
+                                    <h2 class="av-card-kop"><?php echo $result['project_name']; ?></h2>
+                                    <p class="av-card-text"><?php echo $result['project_description']; ?></p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <?php
                 }
@@ -76,14 +78,16 @@ include('../includes/navbar.php');
             foreach ($results as $result) {
                 ?>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12" style="padding-top: 24px">
+                    <a href="projectpage.php?project_id=<?php echo $result['project_id']; ?>">
                     <div class="av-card">
                         <img class="av-img"
                              src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>">
                         <div class="av-text">
-                            <a href="projectpage.php?project_id=<?php echo $result['project_id']; ?>"><?php echo $result['project_name']; ?></a>
+                            <h2 class="av-card-kop"><?php echo $result['project_name']; ?></h2>
                             <p class="av-card-text"><?php echo $result['project_description']; ?></p>
                         </div>
                     </div>
+                    </a>
                 </div>
                 <?php
             }
