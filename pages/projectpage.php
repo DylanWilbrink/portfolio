@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <?php
+    include('../includes/connection.php');
+    $connect = new connection();
+    if (isset($_GET['project_id']) && !empty($_GET['project_id'])){
+    // print project uit
+    $sql = $connect->connect()->prepare("SELECT * FROM projects WHERE project_id=?");
+    $sql->BindParam(1, $_GET['project_id']);
+    $sql->execute();
+    $result = $sql->fetchAll();
+    ?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -15,39 +25,29 @@
     <!-- Your custom styles (optional) -->
     <link href="../stylesheets/css/style.css" rel="stylesheet">
 
-
-
     <!--css-->
     <link rel="stylesheet" href="../js/swiper/css/swiper.css">
     <!--js-->
     <script src="../js/swiper/js/swiper.js"></script>
     <script src="../js/swiper/js/swiper.esm.js"></script>
 
-
-    <?php
-    include("../includes/connection.php");
-    $connect = new connection();
-    ?>
 </head>
-
 <body>
 <!-- Start your project here-->
 <?php
 include('../includes/navbar.php');
 
 // get controle
-if (isset($_GET['project_id']) && !empty($_GET['project_id'])){
-// print project uit
-    $sql = $connect->connect()->prepare("SELECT * FROM projects WHERE project_id=?");
-    $sql->BindParam(1, $_GET['project_id']);
-    $sql->execute();
-    $result = $sql->fetchAll();
 
-    foreach ($result as $row) {
-        echo $row['project_name'].
-            $row['project_description'].
-            "<img class=\"card-img\" src=\"../data/img/" . $row['project_imagename'] . "\" alt=\"foto van het projcet/\">";
-    }
+foreach ($result as $row) { ?>
+<h2><?php echo $row['project_name']; ?></h2>
+    <p><?php echo $row['project_description']; ?></p> <br>
+    <p><?php echo $row['project_creators']; ?></p> <br>
+    <p><?php echo $row['project_study']; ?></p> <br>
+    <p><?php echo $row['project_url']; ?></p> <br>
+    <img src="<?php echo $row['project_imagename']; ?>" alt="">
+
+<?php }
 } else {
     header("Location: ../index.php");
 }
