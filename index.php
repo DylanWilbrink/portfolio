@@ -66,14 +66,16 @@ $results = $query->fetchAll();
 
             <?php foreach ($results as $result) { ?>
                 <div class="swiper-slide">
-                    <div class="av-card">
-                        <img class="av-img"
-                             src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>">
-                        <div class="av-text">
-                            <h2 class="av-card-kop"><?php echo $result['project_name']; ?></h2>
-                            <p class="av-card-text"><?php echo $result['project_description']; ?></p>
+                    <a href="pages/projectpage.php?project_id=<?php echo $result['project_id']; ?>">
+                        <div class="av-card">
+                            <img class="av-img"
+                                 src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>">
+                            <div class="av-text">
+                                <h2 class="av-card-kop"><?php echo $result['project_name']; ?></h2>
+                                <p class="av-card-text"><?php echo $result['project_description']; ?></p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             <?php } ?>
         </div>
