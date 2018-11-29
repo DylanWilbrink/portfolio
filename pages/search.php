@@ -40,22 +40,15 @@ include('../includes/navbar.php');
 ?>
 
 <div class="container mt-4">
-        <h2 class="intro-kop">Titeltext voor de homepage</h2>
-        <p class="intro-text"> Inleidende text voor de homepage. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse ornare, mauris ut convallis euismod, magna orci sodales neque, consequat malesuada ante eros quis
-            lectus. Phasellus dictum tempor vehicula. Vestibulum vitae diam nibh. Morbi scelerisque elit eu libero
-            condimentum, vitae auctor nunc congue. Praesent justo ex, feugiat in ante at, sodales laoreet turpis. Etiam
-            feugiat, turpis ac mattis commodo, neque risus consectetur ante, eget condimentum mi nibh sit amet nisl.</p>
+        <h2 class="intro-kop">Titeltext voor de searchpage</h2>
+        <p class="intro-text"> Inleidende text voor de searchpage. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse ornare, mauris ut convallis euismod, magna orci sodales neque.</p>
     <form action="search.php" class="intro-text" style="padding-top: 0px; margin-top: 0px !important;" method="post">
         <input type="text" name="search">
         <input type="submit" name="submit">
     </form>
     <div class="row">
-    <?php
-
-    $rand = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f');
-    $color = '#'.$rand[rand(0,15)].$rand[rand(0,15)].$rand[rand(0,15)].$rand[rand(0,15)].$rand[rand(0,15)].$rand[rand(0,15)];
-
+    <?php   
     if (isset($shows)) {
         foreach ($shows as $result) {
             ?>
