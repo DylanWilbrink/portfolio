@@ -130,6 +130,22 @@
     outline: 0;
 }
 
+.link-button-project{
+    margin: 0 0px 0px 0px;
+    padding: 0 16px;
+    line-height: 40px;
+    background: #d2232a;
+    color: white;
+    display:inline-block;
+    font-size: 19px;
+    float: left;
+}
+
+.link-button-project a, a.disabled:hover, a:disabled:hover {
+    color: white!important;
+    outline: 0;
+}
+
 .text{
     padding: 24px;
     background: #7464ac;
@@ -174,8 +190,9 @@
     color: #3C3C3C;
 }
 .av-card{
-    height: 350px; margin: 2px; box-shadow: 0 0 0 2px #F1F1F2;
-}
+     height: 350px; margin: 2px; box-shadow: 0 0 0 2px #F1F1F2;
+    background-color: white;
+ }
 
 .av-text{
     padding: 24px;

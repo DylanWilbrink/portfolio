@@ -102,6 +102,23 @@ $results = $query->fetchAll();
             },
         });
     </script>
+    <script type="text/javascript" language="javascript">
+        var idleMax = 1; // Logout after 25 minutes of IDLE
+        var idleTime = 0;
+
+        var idleInterval = setInterval("timerIncrement()", 30000);  // tijd van 1 minuut
+        $( "body" ).mousemove(function( event ) {
+            idleTime = 0; // reset to zero
+        });
+
+        // count minutes
+        function timerIncrement() {
+            idleTime = idleTime + 1;
+            if (idleTime > idleMax) {
+                $("body").css("background-color", "yellow");
+            }
+        }
+    </script>
 </div>
 
 

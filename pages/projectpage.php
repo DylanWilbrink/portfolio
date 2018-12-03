@@ -40,12 +40,30 @@ include('../includes/navbar.php');
 // get controle
 
 foreach ($result as $row) { ?>
-<h2><?php echo $row['project_name']; ?></h2>
-    <p><?php echo $row['project_description']; ?></p> <br>
-    <p><?php echo $row['project_creators']; ?></p> <br>
-    <p><?php echo $row['project_study']; ?></p> <br>
-    <p><?php echo $row['project_url']; ?></p> <br>
-    <img src="<?php echo $row['project_imagename']; ?>" alt="">
+    <div class="container mt-4">
+        <div class="av-card">
+            <img class="av-img"
+                 src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $row['project_imagename']; ?>">
+            <div class="av-text">
+                <h2 class="av-card-kop"><?php echo $row['project_name']; ?></h2>
+                <p class="av-card-text"><?php echo $row['project_description']; ?></p>
+                <p class="av-card-text"><?php echo $row['project_creators']; ?></p>
+                <p class="av-card-text"><?php echo $row['project_study']; ?></p>
+                <div class="link-button-project">
+                    <a class="link" href="<?php echo $row['project_url']; ?>">Project bekijken</a>
+                </div>
+            </div>
+        </div>
+        <h2 class="av-card-kop"><?php echo $row['project_name']; ?></h2>
+        <p><?php echo $row['project_description']; ?></p> <br>
+        <p><?php echo $row['project_creators']; ?></p> <br>
+        <p><?php echo $row['project_study']; ?></p> <br>
+        <div class="link-button-project">
+            <a class="link" href="<?php echo $row['project_url']; ?>">Project bekijken</a>
+        </div>
+        <img src="<?php echo $row['project_imagename']; ?>" alt="">
+    </div>
+
 
 <?php }
 } else {
