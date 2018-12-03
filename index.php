@@ -37,7 +37,7 @@ $query = $connection->connect()->prepare('SELECT * FROM projects
 $query->execute();
 $results = $query->fetchAll();
 ?>
-<div class="card jumbocard card-image" style="background-image: url(Headerbeter.jpg);">
+<div class="card jumbocard card-image" style="background-image: url(Header.jpg);">
     <div class="container quote-container py-5 my-5">
         <div class="quote">
             <div class="text">
@@ -66,7 +66,7 @@ $results = $query->fetchAll();
 
             <?php foreach ($results as $result) { ?>
                 <div class="swiper-slide">
-                    <a href="pages/projectpage.php?project_id=<?php echo $result['project_id']; ?>">
+                    <a href="http://localhost/portfolio/project/<?php echo $result['project_id']; ?>">
                         <div class="av-card">
                             <img class="av-img"
                                  src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>">
@@ -102,23 +102,7 @@ $results = $query->fetchAll();
             },
         });
     </script>
-    <script type="text/javascript" language="javascript">
-        var idleMax = 1; // Logout after 25 minutes of IDLE
-        var idleTime = 0;
 
-        var idleInterval = setInterval("timerIncrement()", 30000);  // tijd van 1 minuut
-        $( "body" ).mousemove(function( event ) {
-            idleTime = 0; // reset to zero
-        });
-
-        // count minutes
-        function timerIncrement() {
-            idleTime = idleTime + 1;
-            if (idleTime > idleMax) {
-                $("body").css("background-color", "yellow");
-            }
-        }
-    </script>
 </div>
 
 
