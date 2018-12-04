@@ -46,9 +46,10 @@ foreach ($result as $row) { ?>
                  src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $row['project_imagename']; ?>">
             <div class="av-text">
                 <h2 class="av-card-kop"><?php echo $row['project_name']; ?></h2>
-                <p class="av-card-text"><?php echo $row['project_description']; ?></p>
-                <p class="av-card-text"><?php echo $row['project_creators']; ?></p>
-                <p class="av-card-text"><?php echo $row['project_study']; ?></p>
+                <p class="av-card-text">Project omschrijving:</p>
+                <p class="av-card-text"><?php echo $row['project_description']; ?></p><br />
+                <p class="av-card-text">Creator: <?php echo $row['project_creators']; ?></p>
+                <p class="av-card-text">Opleiding: <?php echo $row['project_study']; ?></p>
                 <div class="link-button-project">
                     <a class="link" href="<?php echo $row['project_url']; ?>">Project bekijken</a>
                 </div>

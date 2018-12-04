@@ -37,7 +37,7 @@ include('../includes/navbar.php');
     <h2 class="intro-kop">Titeltext voor de searchpage</h2>
     <p class="intro-text"> Inleidende text voor de searchpage. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Suspendisse ornare, mauris ut convallis euismod, magna orci sodales neque.</p>
-    <form action="search.php" class="intro-text" style="padding-top: 0px; margin-top: 0px !important;" method="post">
+    <form action="http://localhost/portfolio/project" class="intro-text" style="padding-top: 0px; margin-top: 0px !important;" method="post">
         <input type="text" name="search">
         <input type="submit" name="submit">
     </form>

@@ -7,6 +7,7 @@ RewriteRule ^home index.php [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^project pages/search.php [NC,L]
+RewriteRule ^search.php project [NC,L]
 
 
 ErrorDocument 404 http://localhost/portfolio/pages/404.php
