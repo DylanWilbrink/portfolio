@@ -41,24 +41,20 @@ $results = $query->fetchAll();
     <div class="container quote-container py-5 my-5">
         <div class="quote">
             <div class="text">
-                Quote van de persoon
+                Wij hebben iets tofs gemaakt!
             </div>
             <div class="text-bottom">
-                Naam/functie of iets dergelijks
+                Onderandere deze studenten hebben hard gewerkt aan een aantal projecten.
             </div>
             <div class="link-button">
-                <a class="link" href="pages/search.php">Meer over onderwerp</a>
+                <a class="link" href="pages/search.php">Projecten bekijken</a>
             </div>
         </div>
     </div>
 </div>
 <div class="container mt-4">
-    <h2 class="intro-kop">Titeltext voor de homepage</h2>
-    <p class="intro-text"> Inleidende text voor de homepage. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse ornare, mauris ut convallis euismod, magna orci sodales neque, consequat malesuada ante eros quis
-        lectus. Phasellus dictum tempor vehicula. Vestibulum vitae diam nibh. Morbi scelerisque elit eu libero
-        condimentum, vitae auctor nunc congue. Praesent justo ex, feugiat in ante at, sodales laoreet turpis. Etiam
-        feugiat, turpis ac mattis commodo, neque risus consectetur ante, eget condimentum mi nibh sit amet nisl.</p>
+    <h2 class="intro-kop">Projectenportaal</h2>
+    <p class="intro-text">Op deze webapplicatie vind u projecten die onze studenten hebben gerealiseerd. Kijk gerust rond en zie wat voor soort opdrachten u straks ook kan maken als Applicatie- mediaontwikkelaar.  </p>
 </div>
 <div class="container my-4">
     <div class="swiper-container sliderprojecten">

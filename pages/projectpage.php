@@ -25,12 +25,6 @@
     <!-- Your custom styles (optional) -->
     <link href="http://localhost/portfolio/stylesheets/css/style.css" rel="stylesheet">
 
-    <!--css-->
-    <link rel="stylesheet" href="../js/swiper/css/swiper.css">
-    <!--js-->
-    <script src="../js/swiper/js/swiper.js"></script>
-    <script src="../js/swiper/js/swiper.esm.js"></script>
-
 </head>
 <body>
 <!-- Start your project here-->
@@ -60,20 +54,17 @@ foreach ($result as $row) { ?>
 
 <?php }
 } else {
-    header("Location: ../index.php");
+    header("Location: http://localhost/portfolio/");
 }
 ?>
-
-
-<!-- SCRIPTS -->
 <!-- JQuery -->
-<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="http://localhost/portfolio/js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap tooltips -->
-<script type="text/javascript" src="../js/popper.min.js"></script>
+<script type="text/javascript" src="http://localhost/portfolio/js/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://localhost/portfolio/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="../js/mdb.min.js"></script>
+<script type="text/javascript" src="http://localhost/portfolio/js/mdb.min.js"></script>
 
 </body>
 

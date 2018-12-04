@@ -34,12 +34,11 @@ include('../includes/navbar.php');
 ?>
 
 <div class="container mt-4">
-    <h2 class="intro-kop">Titeltext voor de searchpage</h2>
-    <p class="intro-text"> Inleidende text voor de searchpage. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse ornare, mauris ut convallis euismod, magna orci sodales neque.</p>
+    <h2 class="intro-kop">Projecten.</h2>
+    <p class="intro-text">Hier vind u projecten die onze studenten hebben gemaakt. U kunt zoeken op basis van projectnamen of de namen van de studenten.</p>
     <form action="http://localhost/portfolio/project" class="intro-text" style="padding-top: 0px; margin-top: 0px !important;" method="post">
-        <input type="text" name="search">
-        <input type="submit" name="submit">
+        <input type="text" name="search" placeholder="Projecten zoeken"> <!-- Nog stylen.-->
+        <input type="submit" name="submit" value="Zoeken">
     </form>
     <div class="row">
         <?php
@@ -91,12 +90,12 @@ include('../includes/navbar.php');
 
 <!-- SCRIPTS -->
 <!-- JQuery -->
-<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="http://localhost/portfolio/js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap tooltips -->
-<script type="text/javascript" src="../js/popper.min.js"></script>
+<script type="text/javascript" src="http://localhost/portfolio/js/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://localhost/portfolio/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="../js/mdb.min.js"></script>
+<script type="text/javascript" src="http://localhost/portfolio/js/mdb.min.js"></script>
 </body>
 </html>

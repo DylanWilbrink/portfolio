@@ -9,6 +9,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^project pages/search.php [NC,L]
 RewriteRule ^search.php project [NC,L]
 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^error/404 pages/404.php [NC,L]
 
-ErrorDocument 404 http://localhost/portfolio/pages/404.php
-
+ErrorDocument 404 http://localhost/portfolio/error/404
