@@ -3,7 +3,7 @@
 
 <head>
     <?php
-    include('../includes/connection.php');
+    include('../includes/navbar.php');
     $connect = new connection();
     if (isset($_GET['project_id']) && !empty($_GET['project_id'])){
     // print project uit
@@ -28,7 +28,6 @@
 <body>
 <!-- Start your project here-->
 <?php
-include('../includes/navbar.php');
 foreach ($result as $row) { ?>
     <div class="container mt-4">
         <div class="av-card-project">
