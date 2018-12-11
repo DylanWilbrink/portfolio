@@ -1,5 +1,4 @@
 <?php
-
 class connection
 {
     public function connect()

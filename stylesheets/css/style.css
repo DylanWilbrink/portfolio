@@ -1,5 +1,3 @@
-/*Font locatie weizigen naar de gewenste locatie waar de fonts staan.*/
-
 @font-face {
     font-family: "the_mix_bold";
     src: url(../../font/themix/themix_bold.eot);
@@ -7,7 +5,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 .navbar{
     border-bottom: 4px solid #45c0ce;
     box-shadow: 0 0 0;
@@ -23,7 +20,6 @@
     color: white!important;
     /*box-shadow: 4px 4px 0px 0px rgba(50,50,50,0.5);*/
 }
-
 @media (max-width: 992px) {
     .nav-link{
         margin-top: 12px;
@@ -39,20 +35,15 @@
 .nav-brand-img{
     width: 240px;
 }
-
 .nav-link, .nav-link:hover, .nav-link:active, .nav-link:focus {
     outline: 0;
 }
-
-
 .custom-toggler{
     background: #7464ac;
     padding: 12px;
     border-radius: 0px;
     /*box-shadow: 4px 4px 0px 0px rgba(50,50,50,0.5);*/
 }
-
-
 .quote-container{
     position: relative;
     /*padding-right: 0px!important;*/
@@ -60,26 +51,26 @@
 .quote {
     position: relative;
     width: 50%;
-    float: right;
+    float: left;
     box-shadow: 0 0 0 6px #404040;
     margin: 6px;
     background-color: #ffffff;
     font-family: the_mix_bold;
 }
-
 .quote:before{
     content: '';
     background-image: url(https://www.aventus.nl/sites/all/themes/aventus/static/images/quote-arrow-purple.svg);
     width: 50px;
-    margin-left: 0;
     background-repeat: no-repeat;
     content: "";
     display: block;
     height: 40px;
     position: absolute;
     z-index: 3;
-    transform: rotate(-90deg);
-    margin-left: -36px;
+    right: 0px;
+    transform: rotate(90deg);
+    margin-right: -36px;
+    margin-top: 10px;
 }
 .jumbocard{
     border-radius:0px;
@@ -108,12 +99,11 @@
 
     .quote:before{
         transform: rotate(0deg);
-        margin-left: 12px;
+        margin-right: -10px;
         margin-top: -30px;
 
     }
 }
-
 .link-button{
     margin: 0 24px 24px 24px;
     padding: 0 16px;
@@ -124,12 +114,10 @@
     font-size: 19px;
     float: right;
 }
-
 .link-button a, a.disabled:hover, a:disabled:hover {
     color: white!important;
     outline: 0;
 }
-
 .link-button-project{
     margin: 0;
     padding: 0 16px;
@@ -140,27 +128,22 @@
     font-size: 19px;
     /*position: relative;*/
 }
-
 .link-button-project a, a.disabled:hover, a:disabled:hover {
     color: white!important;
     outline: 0;
 }
-
 .text{
     padding: 24px;
     background: #7464ac;
     font-size: 28px;
     color: white;
 }
-
 .text-bottom{
     padding: 24px;
     background: white;
     font-size: 19px;
     color: #3C3C3C;
 }
-
-
 .intro-text{
     background: #F1F1F2;
     padding:24px;
@@ -194,19 +177,18 @@
     box-shadow: 0 0 0 2px #F1F1F2;
     background-color: white;
 }
-
 .av-card-project{
     margin: 2px;
     box-shadow: 0 0 0 2px #F1F1F2;
     background-color: white;
 }
-
 .av-text{
     padding: 24px;
 }
-
 .av-img{
-    width: 100%; height: 50%; object-fit: cover;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
 }
 .av-card-kop{
     line-height: 24px;
@@ -216,7 +198,6 @@
     padding-bottom: 12px;
     margin-bottom: 0px;
 }
-
 .av-card-text{
     color: #3C3C3C;
     margin-top: 0px;

@@ -27,7 +27,7 @@
 <body>
 <!-- Start your project here-->
 <?php
-include('includes/navbar_index.php');
+include('includes/navbar.php');
 include('includes/connection.php');
 $connection = new connection();
 
@@ -41,7 +41,7 @@ $results = $query->fetchAll();
     <div class="container quote-container py-5 my-5">
         <div class="quote">
             <div class="text">
-                Wij hebben iets tofs gemaakt!
+                Ik ben bezig met een project!
             </div>
             <div class="text-bottom">
                 Onderandere deze studenten hebben hard gewerkt aan een aantal projecten.
