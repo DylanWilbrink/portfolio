@@ -11,7 +11,7 @@
         <img src="<?php echo $result['project_imagename'] ?>" alt="<?php echo $result['project_imagename'] ?>">
         <h1><?php echo $result['project_name']; ?></h1>
         <p><?php echo $result['project_description'] ?></p>
-
+s
     <?php } ?>
 </div>
 
@@ -34,12 +34,11 @@
                     <a class="nav-link" href="http://localhost/portfolio/project">Projecten</a>
                 </li>
             </ul>
-
         </div>
     </div>
 </nav>
 
-<script type="text/javascript">
+<script>
     function idleTimer() {
         var t = setTimeout(inactiveUser, 30000);
 
@@ -62,21 +61,3 @@
 
     idleTimer();
 </script>
-
-<style>
-    .inactief {
-        position: fixed;
-        display: none;
-        transition: all 2s;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100vh;
-        z-index: 1040;
-        background: rgba(0, 0, 0, 0.9);
-        text-align: center;
-        color: white;
-        padding-top: 50vh;
-        font-family: the_mix_bold;
-    }
-</style>

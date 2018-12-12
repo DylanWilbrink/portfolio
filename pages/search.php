@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <?php include('../php/projects.php');
     $submit = isset($_POST['submit']) ? $_POST['submit'] : '';
@@ -44,6 +45,7 @@ include('../includes/navbar.php');
                             <div class="av-card">
                                 <img class="av-img"
                                      src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>">
+                                     alt="<?php echo $result['project_imagename']; ?>">
                                 <div class="av-text">
                                     <h2 class="av-card-kop"><?php echo $result['project_name']; ?></h2>
                                     <p class="av-card-text"><?php echo $result['project_description']; ?></p>
@@ -67,6 +69,7 @@ include('../includes/navbar.php');
                     <a href="http://localhost/portfolio/project/<?php echo $result['project_id']; ?>">
                     <div class="av-card">
                         <img class="av-img"
+                             alt="<?php echo $result['project_imagename']; ?>"
                              src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>">
                         <div class="av-text">
                             <h2 class="av-card-kop"><?php echo $result['project_name']; ?></h2>
@@ -83,12 +86,12 @@ include('../includes/navbar.php');
 
 <!-- SCRIPTS -->
 <!-- JQuery -->
-<script type="text/javascript" src="http://localhost/portfolio/js/jquery-3.3.1.min.js"></script>
+<script src="http://localhost/portfolio/js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap tooltips -->
-<script type="text/javascript" src="http://localhost/portfolio/js/popper.min.js"></script>
+<script src="http://localhost/portfolio/js/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="http://localhost/portfolio/js/bootstrap.min.js"></script>
+<script src="http://localhost/portfolio/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="http://localhost/portfolio/js/mdb.min.js"></script>
+<script src="http://localhost/portfolio/js/mdb.min.js"></script>
 </body>
 </html>

@@ -48,6 +48,7 @@ $results = $query->fetchAll();
                     <a href="http://localhost/portfolio/project/<?php echo $result['project_id']; ?>">
                         <div class="av-card">
                             <img class="av-img"
+                                 alt="<?php echo $result['project_imagename']; ?>"
                                  src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>">
                             <div class="av-text">
                                 <h2 class="av-card-kop"><?php echo $result['project_name']; ?></h2>
@@ -87,13 +88,13 @@ $results = $query->fetchAll();
 
 <!-- SCRIPTS -->
 <!-- JQuery -->
-<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap tooltips -->
-<script type="text/javascript" src="js/popper.min.js"></script>
+<script src="js/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="js/mdb.min.js"></script>
+<script src="js/mdb.min.js"></script>
 
 </body>
 
