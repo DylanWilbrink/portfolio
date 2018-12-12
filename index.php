@@ -9,11 +9,11 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
-    <link href="stylesheets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="stylesheets/css/mdb.min.css" rel="stylesheet">
+    <link href="stylesheets/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="stylesheets/css/style.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
 
 
     <!--css-->

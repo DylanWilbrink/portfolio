@@ -1,7 +1,7 @@
 @font-face {
     font-family: "the_mix_bold";
-    src: url(../../font/themix/themix_bold.eot);
-    src: url(../../font/themix/themix_bold.eot?#iefix) format("embedded-opentype"), url(../../font/themix/themix_bold.woff2) format("woff2"), url(../../font/themix/themix_bold.woff) format("woff"), url(../../font/themix/themix_bold.ttf) format("truetype");
+    src: url(../font/themix/themix_bold.eot);
+    src: url(../font/themix/themix_bold.eot?#iefix) format("embedded-opentype"), url(../font/themix/themix_bold.woff2) format("woff2"), url(../font/themix/themix_bold.woff) format("woff"), url(../font/themix/themix_bold.ttf) format("truetype");
     font-weight: normal;
     font-style: normal;
 }
