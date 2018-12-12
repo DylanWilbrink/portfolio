@@ -3,6 +3,7 @@
 
 <head>
     <?php
+        $pageTitle = 'Homepagina';
         include('includes/includes.php');
     ?>
 </head>

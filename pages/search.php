@@ -15,6 +15,7 @@
     }
     ?>
     <?php
+        $pageTitle = 'Projecten zoeken';
         include('../includes/includes.php');
     ?>
 
