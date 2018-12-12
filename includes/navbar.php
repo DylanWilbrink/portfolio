@@ -79,9 +79,4 @@
         padding-top: 50vh;
         font-family: the_mix_bold;
     }
-
-    .av-box:hover {
-        background-color: #ffffff;
-        color: #7464ac;
-    }
 </style>

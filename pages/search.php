@@ -1,6 +1,6 @@
 <html>
 <head>
-    <?php include('../php/homes.php');
+    <?php include('../php/projects.php');
     $submit = isset($_POST['submit']) ? $_POST['submit'] : '';
 
     if ($submit) {
