@@ -45,7 +45,7 @@ $results = $query->fetchAll();
 
             <?php foreach ($results as $result) { ?>
                 <div class="swiper-slide">
-                    <a href="http://localhost/portfolio/project/<?php echo $result['project_id']; ?>">
+                    <a href="http://www.jaimy.holidayrentcenter.com/project/<?php echo $result['project_id']; ?>">
                         <div class="av-card">
                             <img class="av-img"
                                  alt="<?php echo $result['project_imagename']; ?>"
@@ -88,13 +88,13 @@ $results = $query->fetchAll();
 
 <!-- SCRIPTS -->
 <!-- JQuery -->
-<script src="js/jquery-3.3.1.min.js"></script>
+<script src="http://www.jaimy.holidayrentcenter.com/js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap tooltips -->
-<script src="js/popper.min.js"></script>
+<script src="http://www.jaimy.holidayrentcenter.com/js/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="http://www.jaimy.holidayrentcenter.com/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
-<script src="js/mdb.min.js"></script>
+<script src="http://www.jaimy.holidayrentcenter.com/js/mdb.min.js"></script>
 
 </body>
 

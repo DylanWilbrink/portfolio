@@ -30,7 +30,7 @@ include('../includes/navbar.php');
 <div class="container mt-4">
     <h2 class="intro-kop">Projecten.</h2>
     <p class="intro-text">Hier vind u projecten die onze studenten hebben gemaakt. U kunt zoeken op basis van projectnamen of de namen van de studenten.</p>
-    <form action="http://localhost/portfolio/project" class="intro-text" style="padding-top: 0px; margin-top: 0px !important;" method="post">
+    <form action="http://jaimy.holidayrentcenter.com/project" class="intro-text" style="padding-top: 0px; margin-top: 0px !important;" method="post">
         <input type="text" name="search" placeholder="Projecten zoeken"> <!-- Nog stylen.-->
         <input type="submit" name="submit" value="Zoeken">
     </form>
@@ -41,10 +41,10 @@ include('../includes/navbar.php');
                 foreach ($shows as $result) {
                     ?>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12" style="padding-top: 24px">
-                        <a href="http://localhost/portfolio/project/<?php echo $result['project_id']; ?>">
+                        <a href="http://jaimy.holidayrentcenter.com/project/<?php echo $result['project_id']; ?>">
                             <div class="av-card">
                                 <img class="av-img"
-                                     src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>">
+                                     src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>"
                                      alt="<?php echo $result['project_imagename']; ?>">
                                 <div class="av-text">
                                     <h2 class="av-card-kop"><?php echo $result['project_name']; ?></h2>
@@ -66,7 +66,7 @@ include('../includes/navbar.php');
             foreach ($results as $result) {
                 ?>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12" style="padding-top: 24px">
-                    <a href="http://localhost/portfolio/project/<?php echo $result['project_id']; ?>">
+                    <a href="http://jaimy.holidayrentcenter.com/project/<?php echo $result['project_id']; ?>">
                     <div class="av-card">
                         <img class="av-img"
                              alt="<?php echo $result['project_imagename']; ?>"
@@ -86,12 +86,12 @@ include('../includes/navbar.php');
 
 <!-- SCRIPTS -->
 <!-- JQuery -->
-<script src="http://localhost/portfolio/js/jquery-3.3.1.min.js"></script>
+<script src="http://jaimy.holidayrentcenter.com/js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap tooltips -->
-<script src="http://localhost/portfolio/js/popper.min.js"></script>
+<script src="http://jaimy.holidayrentcenter.com/js/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
-<script src="http://localhost/portfolio/js/bootstrap.min.js"></script>
+<script src="http://jaimy.holidayrentcenter.com/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
-<script src="http://localhost/portfolio/js/mdb.min.js"></script>
+<script src="http://jaimy.holidayrentcenter.com/js/mdb.min.js"></script>
 </body>
 </html>

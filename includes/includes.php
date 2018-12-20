@@ -3,18 +3,18 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title><?php echo $pageTitle; ?> | Portfolio door studenten van Aventus</title>
 <!-- Font Awesome -->
-<link rel="shortcut icon" href="http://localhost/portfolio/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.jaimy.holidayrentcenter.com/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Bootstrap core CSS -->
-<link href="http://localhost/portfolio/stylesheets/bootstrap.min.css" rel="stylesheet">
+<link href="http://jaimy.holidayrentcenter.com/stylesheets/bootstrap.min.css" rel="stylesheet">
 <!-- Material Design Bootstrap -->
-<link href="http://localhost/portfolio/stylesheets/mdb.min.css" rel="stylesheet">
+<link href="http://jaimy.holidayrentcenter.com/stylesheets/mdb.min.css" rel="stylesheet">
 <!-- custom styles) -->
-<link href="http://localhost/portfolio/stylesheets/style.css" rel="stylesheet">
+<link href="http://jaimy.holidayrentcenter.com/stylesheets/style.css" rel="stylesheet">
 
 
 <!--css-->
-<link rel="stylesheet" href="js/swiper/css/swiper.css">
+<link rel="stylesheet" href="http://www.jaimy.holidayrentcenter.com/js/swiper/css/swiper.css">
 <!--js-->
-<script src="js/swiper/js/swiper.js"></script>
-<script src="js/swiper/js/swiper.esm.js"></script>
+<script src="http://www.jaimy.holidayrentcenter.com/js/swiper/js/swiper.js"></script>
+<script src="http://www.jaimy.holidayrentcenter.com/js/swiper/js/swiper.esm.js"></script>
