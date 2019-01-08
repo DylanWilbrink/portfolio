@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <?php include('../php/projects.php');
+    //Haal notice weg
     $submit = isset($_POST['submit']) ? $_POST['submit'] : '';
 
+    //Zoek project
     if ($submit) {
         $show = $connection->connect()->prepare("SELECT * FROM projects p
                                                   WHERE p.project_name LIKE :search OR p.project_creators LIKE :search

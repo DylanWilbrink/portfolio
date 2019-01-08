@@ -2,7 +2,7 @@
     <?php
     include_once('connection.php');
     $connect = new connection();
-
+    //Laad willekeurig project in voor slideshow
     $randomquery = $connect->connect()->prepare('SELECT * FROM projects ORDER BY RAND() LIMIT 1');
     $randomquery->execute();
     $randomresults = $randomquery->fetchAll();

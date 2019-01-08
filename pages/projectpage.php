@@ -3,6 +3,7 @@
 
 <head>
     <?php
+    //Laad titel in
     $pageTitle = 'Project '. $_GET['project_id']. '';
     include('../includes/includes.php');
     ?>
@@ -11,6 +12,7 @@
 <?php
 include('../includes/navbar.php');
 $connect = new connection();
+//Laad details in
 if (isset($_GET['project_id']) && !empty($_GET['project_id'])){
     // print project uit
     $sql = $connect->connect()->prepare("SELECT * FROM projects WHERE project_id=?");
@@ -20,7 +22,9 @@ if (isset($_GET['project_id']) && !empty($_GET['project_id'])){
     ?>
 <!-- Start your project here-->
 <?php
-foreach ($result as $row) { ?>
+foreach ($result as $row) {
+    //Display de projectdetails
+    ?>
     <div class="container mt-4">
         <div class="av-card-project">
             <img class="av-img"
