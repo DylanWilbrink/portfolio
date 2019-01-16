@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
     <?php include('../php/projects.php');
-    //Haal notice weg
     $submit = isset($_POST['submit']) ? $_POST['submit'] : '';
 
-    //Zoek project
     if ($submit) {
         $show = $connection->connect()->prepare("SELECT * FROM projects p
                                                   WHERE p.project_name LIKE :search OR p.project_creators LIKE :search
@@ -46,7 +44,7 @@ include('../includes/navbar.php');
                         <a href="http://jaimy.holidayrentcenter.com/project/<?php echo $result['project_id']; ?>">
                             <div class="av-card">
                                 <img class="av-img"
-                                     src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>"
+                                     src="http://www.pdvhacks.com/Aventus/upload/<?php echo $result['project_imagename']; ?>"
                                      alt="<?php echo $result['project_imagename']; ?>">
                                 <div class="av-text">
                                     <h2 class="av-card-kop"><?php echo $result['project_name']; ?></h2>
@@ -72,7 +70,7 @@ include('../includes/navbar.php');
                     <div class="av-card">
                         <img class="av-img"
                              alt="<?php echo $result['project_imagename']; ?>"
-                             src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>">
+                             src="http://www.pdvhacks.com/Aventus/upload/<?php echo $result['project_imagename']; ?>">
                         <div class="av-text">
                             <h2 class="av-card-kop"><?php echo $result['project_name']; ?></h2>
                             <p class="av-card-text"><?php echo $result['project_description']; ?></p>

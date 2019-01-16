@@ -12,4 +12,4 @@ RewriteRule ^search.php project [NC,L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^error/404 pages/404.php [NC,L]
 
-ErrorDocument 404 http://localhost/portfolio/error/404
+ErrorDocument 404 http://jaimy.holidayrentcenter.com/error/404

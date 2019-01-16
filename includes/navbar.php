@@ -2,13 +2,13 @@
     <?php
     include_once('connection.php');
     $connect = new connection();
-    //Laad willekeurig project in voor slideshow
+
     $randomquery = $connect->connect()->prepare('SELECT * FROM projects ORDER BY RAND() LIMIT 1');
     $randomquery->execute();
     $randomresults = $randomquery->fetchAll();
 
     foreach ($randomresults as $result) { ?>
-        <img src="<?php echo $result['project_imagename'] ?>" alt="<?php echo $result['project_imagename'] ?>">
+        <img src="http://www.pdvhacks.com/Aventus/upload/<?php echo $result['project_imagename'] ?>" height="50%" alt="<?php echo $result['project_imagename'] ?>">
         <h1><?php echo $result['project_name']; ?></h1>
         <p><?php echo $result['project_description'] ?></p>
     <?php } ?>

@@ -3,8 +3,7 @@ class connection
 {
     public function connect()
     {
-        //connectie leggen met database
-        $connect = new PDO('mysql:host=185.104.29.16;dbname=dylanw_hhh', "dylanw_root", "admin");
+        $connect = new PDO('mysql:host=pdvhacks.com;dbname=dehefnq201_aventus', "dehefnq201_aventus", "aventus");
         return $connect;
     }
 }

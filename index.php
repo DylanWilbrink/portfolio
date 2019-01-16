@@ -49,7 +49,7 @@ $results = $query->fetchAll();
                         <div class="av-card">
                             <img class="av-img"
                                  alt="<?php echo $result['project_imagename']; ?>"
-                                 src="http://placehold.jp/7464ac/ffffff/1920x1080.png?text=<?php echo $result['project_imagename']; ?>">
+                                 src="http://www.pdvhacks.com/Aventus/upload/<?php echo $result['project_imagename']; ?>">
                             <div class="av-text">
                                 <h2 class="av-card-kop"><?php echo $result['project_name']; ?></h2>
                                 <p class="av-card-text"><?php echo $result['project_description']; ?></p>
