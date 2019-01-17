@@ -1,0 +1,15 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^project/([0-9]+) pages/projectpage.php?project_id=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^home index.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^project pages/search.php [NC,L]
+RewriteRule ^search.php project [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^error/404 pages/404.php [NC,L]
+
+ErrorDocument 404 http://jaimy.holidayrentcenter.com/error/404

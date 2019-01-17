@@ -16,5 +16,3 @@
 <!--css-->
 <link rel="stylesheet" href="http://www.jaimy.holidayrentcenter.com/js/swiper/css/swiper.css">
 <!--js-->
-<script src="http://www.jaimy.holidayrentcenter.com/js/swiper/js/swiper.js"></script>
-<script src="http://www.jaimy.holidayrentcenter.com/js/swiper/js/swiper.esm.js"></script>

@@ -1,0 +1,9 @@
+/*Font locatie weizigen naar de gewenste locatie waar de fonts staan.*/
+
+@font-face {
+    font-family: "the_mix_bold";
+    src: url(themix_bold.eot);
+    src: url(themix_bold.eot?#iefix) format("embedded-opentype"), url(themix_bold.woff2) format("woff2"), url(themix_bold.woff) format("woff"), url(themix_bold.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
